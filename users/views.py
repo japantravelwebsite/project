@@ -75,11 +75,13 @@ def signup_view(request):
 
 def GetNagoya(request):
     logger.info("USER:%s LOAD NAGOYA PAGE", login_user_name)
-    #print(login_user_name)
-    #print(login_user_name, "NAGOYA INFO")
-    #logger.info("%s NAGOYA INFO", login_user_name)
-    #imgs = picture_db.objects.get(location = "Nagoya")
-    return render(request, "users/Nagoya.html")
+    imgs1 = Book.objects.filter(Q(location="nagoya") & Q(people="A"))
+    imgs2 = Book.objects.filter(Q(location="nagoya") & Q(people="N"))
+    imgs3 = Book.objects.filter(Q(location="nagoya") & Q(people="C"))
+    imgs4 = Book.objects.filter(Q(location="nagoya") & Q(people="J"))
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+
 
 def GetTakayama(request):
     logger.info("USER:%s LOAD TAKAYAMA PAGE", login_user_name)
@@ -98,13 +100,22 @@ def GetTakayama_mov(request):
 
 def GetToyama(request):
     logger.info("USER:%s LOAD TOYAMA PAGE", login_user_name)
+    imgs1 = Book.objects.filter(Q(location="toyama") & Q(people="A"))
+    imgs2 = Book.objects.filter(Q(location="toyama") & Q(people="N"))
+    imgs3 = Book.objects.filter(Q(location="toyama") & Q(people="C"))
+    imgs4 = Book.objects.filter(Q(location="toyama") & Q(people="J"))
     #imgs = picture_db.objects.get(location = "Toyama")
-    return render(request, "users/Toyama.html")
+    return render(request, "users/Toyama.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
 
 def GetGero(request):
     logger.info("USER:%s LOAD GERO PAGE", login_user_name)
     #imgs = picture_db.objects.get(location = "Gero")
-    return render(request, "users/Gero.html")
+    imgs1 = Book.objects.filter(Q(location="gero") & Q(people="A"))
+    imgs2 = Book.objects.filter(Q(location="gero") & Q(people="N"))
+    imgs3 = Book.objects.filter(Q(location="gero") & Q(people="C"))
+    imgs4 = Book.objects.filter(Q(location="gero") & Q(people="J"))
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Gero.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
 
 def GetBacktoLogin():
     logger.info("USER:%s LOAD NAGOYA PAGE", login_user_name)
@@ -112,8 +123,12 @@ def GetBacktoLogin():
 
 def GetShirakawago(request):
     logger.info("USER:%s LOAD SHIRAKAWAGO PAGE", login_user_name)
-    #imgs = picture_db.objects.get(location = "Gero")
-    return render(request, "users/Shirakawago.html")
+    imgs1 = Book.objects.filter(Q(location="shirakawago") & Q(people="A"))
+    imgs2 = Book.objects.filter(Q(location="shirakawago") & Q(people="N"))
+    imgs3 = Book.objects.filter(Q(location="shirakawago") & Q(people="C"))
+    imgs4 = Book.objects.filter(Q(location="shirakawago") & Q(people="J"))
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Shirakawago.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
 
 def Chubu_view(request):
     logger.info("USER:%s LOAD CHUBU PAGE", login_user_name)

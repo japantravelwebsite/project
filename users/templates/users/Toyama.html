@@ -1,15 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
     <title>Toyama</title>
+    <style>
+      body {
+        font-family: Consolas, monospace;
+      }
+      img {
+        max-width: 100%;
+      }
+     
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .image-container img {
+          width: 200px;
+          object-fit: cover;
+          transition: transform 0.3s;   
+      }
+
+        .image-container img:hover {
+          transform: scale(1.4);
+      }
+    </style>
 </head>
 <body>
     <h1>Toyama</h1>
-    <br>
-    <img src="/static/image/Gero.JPG" alt="" width="300px">
-    <p><a href="{% url 'user:choice_toyama' %}">뒤로가기</a></p>
+    
+
+
+    <div class = "image-container">
+        <div>
+        <h1>단체사진</h1>
+        {% for img in imgs1%}
+        <p>
+            <div>
+                <img src="/static/photo/{{img.content}}" alt="None">
+            </div>
+        </p>
+        {% endfor %}
+        </div>
+        <div>
+        <h1>풍경</h1>
+        <br>
+        {% for img in imgs2%}
+        <p>
+            <div>
+                <img src="/static/photo/{{img.content}}" alt="None">
+            </div>
+        </p>
+        {% endfor %}
+        </div>
+        <div>
+        <h1>찬웅사진</h1>
+        <br>
+        {% for img in imgs3%}
+        <p>
+            <div>
+                <img src="/static/photo/{{img.content}}" alt="None">
+            </div>
+        </p>
+        {% endfor %}
+        </div>
+        <div>
+        <h1>정현사진</h1>
+        <br>
+        {% for img in imgs4%}
+        <p>
+            <div>
+                <img src="/static/photo/{{img.content}}" alt="None">
+            </div>
+        </p>
+        {% endfor %}
+        </div>
+    </div>
+
+
+<!--
+    <div class="c">
+        <img src="http://drive.google.com/uc?export=view&id=1Qf-r6-nED7SqUUhrKiwa5ZNEk_uggRgG" alt="sadfdsaf">
+    </div>
+    <div class="d">
+        <img src="http://drive.google.com/uc?export=view&id=1xm-E8596oYhxu69HGL5PAIix2TYeDbVd" alt="sadfdsaf">
+    </div>
+-->
+
+
+    <p><a href="{% url 'user:choice' %}">뒤로가기</a></p>
 </body>
 </html>
