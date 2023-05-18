@@ -102,6 +102,26 @@ def GetTakayama_mov(request):
     #imgs = picture_db.objects.get(location = "Toyama")
     return render(request, "users/Takayama_mov.html")
 
+def GetNagoya_mov(request):
+    logger.info("USER:%s LOAD NAGOYA_MOV PAGE", login_user_name)
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Nagoya_mov.html")
+
+def GetShirakawago_mov(request):
+    logger.info("USER:%s LOAD SHIRAKAWAGO_MOV PAGE", login_user_name)
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Shirakawago_mov.html")
+
+def GetGero_mov(request):
+    logger.info("USER:%s LOAD GERO_MOV PAGE", login_user_name)
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Gero_mov.html")
+
+def GetToyama_mov(request):
+    logger.info("USER:%s LOAD TOYAMA_MOV PAGE", login_user_name)
+    #imgs = picture_db.objects.get(location = "Toyama")
+    return render(request, "users/Toyama_mov.html")
+
 def GetToyama(request):
     logger.info("USER:%s LOAD TOYAMA PAGE", login_user_name)
     imgs1 = Book.objects.filter(Q(location="toyama") & Q(people="A"))

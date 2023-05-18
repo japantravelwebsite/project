@@ -29,8 +29,6 @@
 </head>
 <body>
     <h1>Toyama</h1>
-    
-    
     <style>
         .page {
           display: none;
@@ -62,9 +60,9 @@
     }
 </style>
 </head>
-    <button onclick="switchContent('page0')">처음으로</button>
-    <br><br><br>
+    <br>
     <div id="page0" class="page active" >
+    <p><a href="{% url 'user:choice_toyama' %}">뒤로가기</a></p>
     <h1><button onclick="switchContent('page1')">단체사진</button></h1>
     <br>
     <div class = "image-container">
@@ -128,6 +126,7 @@
             </a>
         </div>
     </div>
+    <button onclick="switchContent('page0')">처음으로</button>
   </div>
 
   <div id="page2" class="page" >
@@ -151,6 +150,7 @@
             </a>
         </div>
     </div>
+    <button onclick="switchContent('page0')">처음으로</button>
   </div>
   <div id="page3" class="page" >
     <div class="carousel-container">
@@ -173,6 +173,7 @@
             </a>
         </div>
     </div>
+    <button onclick="switchContent('page0')">처음으로</button>
   </div>
 
   <div id="page4" class="page" >
@@ -196,6 +197,7 @@
             </a>
         </div>
     </div>
+    <button onclick="switchContent('page0')">처음으로</button>
   </div>
 
   <script>
@@ -224,7 +226,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <p><a href="{% url 'user:choice' %}">뒤로가기</a></p>
+    
 </body>
 </html>
 
