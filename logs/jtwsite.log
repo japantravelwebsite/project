@@ -1917,3 +1917,7 @@ NameError: name 'api_key' is not defined
 2023-05-18 18:34:05,676 [INFO] my: USER:None LOAD TOYAMA PAGE
 2023-05-18 18:34:07,055 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
 2023-05-18 18:34:07,965 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 18:39:21,170 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 18:39:23,217 [WARNING] django.request: Not Found: /
+2023-05-18 18:39:23,259 [WARNING] django.request: Not Found: /favicon.ico
+2023-05-18 18:39:28,910 [INFO] my: LOAD LOGIN PAGE
