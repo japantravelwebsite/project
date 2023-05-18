@@ -1533,3 +1533,305 @@ django.db.utils.IntegrityError: UNIQUE constraint failed: users_user.username
 2023-05-11 20:00:32,904 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
 2023-05-11 20:00:33,881 [INFO] my: USER:None LOAD TAKAYAMA PAGE
 2023-05-11 20:01:10,881 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-05-11 23:43:39,394 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-11 23:43:41,414 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:43:49,437 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:43:55,482 [INFO] my: LOAD LOGOUT PAGE
+2023-05-11 23:43:55,491 [INFO] my: USER:None LOGOUT SUCCESSED
+2023-05-11 23:43:55,494 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:44:02,884 [INFO] my: LOAD SIGNUP PAGE
+2023-05-11 23:44:46,342 [INFO] my: LOAD SIGNUP PAGE
+2023-05-11 23:44:46,437 [INFO] my: USER:hygeon SIGNUP SUCCESSED
+2023-05-11 23:44:46,438 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:44:59,014 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:44:59,106 [INFO] my: USER:hygeon LOGIN SUCCESSED
+2023-05-11 23:45:06,714 [INFO] my: USER:hygeon WRONG PAGE
+2023-05-11 23:45:08,358 [INFO] my: LOAD LOGIN PAGE
+2023-05-11 23:45:11,422 [INFO] my: USER:hygeon LOAD CHUBU PAGE
+2023-05-11 23:45:14,693 [INFO] my: USER:hygeon LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-11 23:45:20,443 [INFO] my: USER:hygeon LOAD GERO PAGE
+2023-05-11 23:45:58,764 [INFO] my: USER:hygeon LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:50:08,977 [INFO] my: USER:hygeon LOAD CHUBU PAGE
+2023-05-11 23:50:11,021 [INFO] my: USER:hygeon LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:50:11,849 [INFO] my: USER:hygeon LOAD TAKAYAMA_MOV PAGE
+2023-05-11 23:50:17,593 [WARNING] django.request: Not Found: /favicon.ico
+2023-05-11 23:50:29,735 [INFO] my: USER:hygeon LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:50:31,059 [INFO] my: USER:hygeon LOAD TAKAYAMA PAGE
+2023-05-11 23:54:17,299 [INFO] my: USER:hygeon LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:54:21,040 [INFO] my: USER:hygeon LOAD CHUBU PAGE
+2023-05-11 23:54:29,889 [INFO] my: USER:hygeon LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:54:31,071 [INFO] my: USER:hygeon LOAD TOYAMA PAGE
+2023-05-11 23:54:52,801 [INFO] my: USER:hygeon LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-11 23:54:54,782 [INFO] my: USER:hygeon LOAD CHUBU PAGE
+2023-05-12 00:07:22,301 [INFO] my: LOAD LOGIN PAGE
+2023-05-12 00:07:25,409 [INFO] my: LOAD LOGOUT PAGE
+2023-05-12 00:07:25,415 [INFO] my: USER:hygeon LOGOUT SUCCESSED
+2023-05-12 00:07:25,419 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 01:51:00,881 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 01:51:08,887 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 01:51:12,191 [WARNING] django.request: Not Found: /
+2023-05-18 01:51:22,170 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 01:51:26,740 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 01:51:26,833 [INFO] my: USER:user1 LOGIN SUCCESSED
+2023-05-18 01:51:30,320 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 01:51:33,669 [INFO] my: USER:user1 LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE
+2023-05-18 01:51:34,996 [INFO] my: USER:user1 LOAD SHIRAKAWAGO PAGE
+2023-05-18 01:51:40,381 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 01:51:41,822 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 01:52:36,698 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 01:52:40,755 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 01:54:14,882 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 01:54:16,389 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 01:58:21,039 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:02:23,779 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:02:51,812 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:03:07,408 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:03:18,458 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:03:32,937 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:03:50,067 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 02:04:07,225 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 15:00:13,961 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 15:00:25,567 [WARNING] django.request: Not Found: /
+2023-05-18 15:00:25,601 [WARNING] django.request: Not Found: /favicon.ico
+2023-05-18 15:00:32,311 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:00:35,268 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:00:59,433 [INFO] my: USER:None LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE
+2023-05-18 15:01:00,896 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:20:37,679 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:04,966 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:33,999 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:42,073 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:53,183 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:54,449 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:21:58,865 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:22:24,629 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:22:48,993 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:23:06,625 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:02,326 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:24:04,858 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:21,448 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:32,220 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:43,091 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:50,743 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 15:24:54,788 [INFO] my: USER:None LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE
+2023-05-18 15:31:27,612 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:31:35,740 [INFO] my: LOAD LOGOUT PAGE
+2023-05-18 15:31:35,749 [INFO] my: USER:None LOGOUT SUCCESSED
+2023-05-18 15:31:35,753 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:31:40,293 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:31:40,384 [INFO] my: USER:user1 LOGIN SUCCESSED
+2023-05-18 15:31:45,601 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 15:31:47,321 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 15:31:48,333 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 15:32:07,294 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 15:32:10,371 [INFO] my: USER:user1 LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 15:32:11,138 [INFO] my: USER:user1 LOAD TOYAMA PAGE
+2023-05-18 15:32:17,550 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 15:33:01,879 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:33:04,979 [INFO] my: USER:user1 WRONG PAGE
+2023-05-18 15:33:06,297 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:33:10,787 [INFO] my: USER:user1 WRONG PAGE
+2023-05-18 15:33:12,129 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:33:13,388 [INFO] my: USER:user1 WRONG PAGE
+2023-05-18 15:33:14,739 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 15:33:20,622 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 16:01:39,217 [INFO] my: USER:user1 LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE
+2023-05-18 16:01:40,071 [INFO] my: USER:user1 LOAD SHIRAKAWAGO PAGE
+2023-05-18 16:01:46,457 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 16:01:48,399 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 16:01:50,641 [INFO] my: USER:user1 LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-18 16:01:51,506 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 16:04:27,357 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 16:04:28,900 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 16:08:36,284 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 16:08:38,497 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:31:08,006 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:34:43,229 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 16:34:44,152 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:42:16,188 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:43:18,551 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:43:19,857 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:44:17,896 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 16:44:18,950 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:45:26,586 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:45:55,435 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:46:00,474 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:46:16,665 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:47:07,484 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:48:13,845 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:48:45,495 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:48:46,134 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:48:46,299 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 16:48:46,479 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:04:46,827 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:04:56,935 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:04:58,385 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:05:01,759 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:05:02,555 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:05:06,168 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:07:03,829 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:07:13,361 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:07:15,181 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:08:15,132 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:08:20,144 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:08:26,415 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:08:42,555 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:08:43,784 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:08:53,356 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:08:54,273 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:08:59,423 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:09:00,696 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:10:24,895 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:10:32,078 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:10:35,044 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:10:55,287 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:12:44,716 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:12:51,711 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:14:56,980 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:16:59,779 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:17:00,986 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:17:02,711 [INFO] my: USER:user1 LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 17:17:03,958 [INFO] my: USER:user1 LOAD NAGOYA PAGE
+2023-05-18 17:17:14,059 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:19:07,385 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:19:08,777 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:19:09,735 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:19:56,355 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:20:18,064 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:21:06,248 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:21:48,723 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:23:40,757 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:23:49,705 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:23:51,532 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:23:53,675 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:23:55,565 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:23:56,772 [INFO] my: USER:user1 LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:23:57,730 [INFO] my: USER:user1 LOAD TOYAMA PAGE
+2023-05-18 17:25:24,826 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:25:26,402 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:25:28,760 [INFO] my: USER:user1 LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-18 17:25:30,200 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 17:27:26,657 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 17:29:03,497 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:29:04,580 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:29:07,537 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:29:10,976 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:29:19,301 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:29:20,972 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:29:22,325 [INFO] my: USER:user1 LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-18 17:29:23,569 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 17:29:45,151 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:29:48,707 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:29:55,831 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:29:57,517 [INFO] my: USER:user1 LOAD CHUBU PAGE
+2023-05-18 17:30:00,506 [INFO] my: USER:user1 LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-18 17:30:03,433 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 17:30:05,009 [INFO] my: USER:user1 LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:30:06,527 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:30:22,930 [INFO] my: USER:user1 LOAD TAKAYAMA PAGE
+2023-05-18 17:30:34,664 [INFO] my: USER:user1 LOAD GERO PAGE
+2023-05-18 17:52:39,767 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 17:52:56,043 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 17:52:56,246 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 17:52:59,998 [WARNING] django.request: Not Found: /
+2023-05-18 17:53:00,043 [WARNING] django.request: Not Found: /favicon.ico
+2023-05-18 17:53:02,857 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 17:53:04,777 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:53:04,778 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 136, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:53:10,598 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:53:10,599 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 136, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:54:34,414 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:54:34,414 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 136, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:54:37,461 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:54:37,462 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 136, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:55:06,554 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 17:55:06,783 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 17:55:08,223 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:55:08,224 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 139, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:55:09,232 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:55:09,233 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 139, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:55:12,785 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:55:12,786 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 139, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':api_key})
+                                                          ^^^^^^^
+NameError: name 'api_key' is not defined
+2023-05-18 17:56:09,832 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 17:56:10,058 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 17:56:12,218 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 17:56:14,151 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 17:56:14,996 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-05-18 17:56:22,795 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE

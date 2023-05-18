@@ -30,9 +30,43 @@
 <body>
     <h1>Toyama</h1>
     
+    
+    <style>
+        .page {
+          display: none;
+        }
+    
+        .active {
+          display: block;
+        }
+      </style>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<style>
+    /* Customize the carousel container */
+    .carousel-container {
+        width: 600px;
+        margin: 0 auto;
+    }
 
-    <h1>단체사진</h1>
+    /* Style the carousel images */
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    /* Zoom effect on hover */
+    .carousel-item img:hover {
+        transform: scale(1.1);
+    }
+</style>
+</head>
+    <button onclick="switchContent('page0')">처음으로</button>
+    <br><br><br>
+    <div id="page0" class="page active" >
+    <h1><button onclick="switchContent('page1')">단체사진</button></h1>
+    <br>
     <div class = "image-container">
             {% for img in imgs1%}
             <p>
@@ -40,8 +74,9 @@
             </p>
             {% endfor %}
     </div>
+    <br><br><br>
+    <h1><button onclick="switchContent('page2')">풍경</button></h1>
     <br>
-    <h1>풍경</h1>
     <div class = "image-container">
         {% for img in imgs2%}
         <p>
@@ -49,8 +84,9 @@
         </p>
         {% endfor %}
     </div>
+    <br><br><br>
+    <h1><button onclick="switchContent('page3')">찬웅사진</button></h1>
     <br>
-    <h1>찬웅사진</h1>
     <div class = "image-container">
         {% for img in imgs3%}
         <p>
@@ -58,8 +94,9 @@
         </p>
         {% endfor %}
     </div>
+    <br><br><br>
+    <h1><button onclick="switchContent('page4')">정현사진</button></h1>
     <br>
-    <h1>정현사진</h1>
     <div class = "image-container">
         {% for img in imgs4%}
         <p>
@@ -67,19 +104,127 @@
         </p>
         {% endfor %}
     </div>
-    
-    
-    <!--
-        <div class="c">
-            <img src="http://drive.google.com/uc?export=view&id=1Qf-r6-nED7SqUUhrKiwa5ZNEk_uggRgG" alt="sadfdsaf">
+    </div>
+    </div>
+
+  <div id="page1" class="page" >
+    <div class="carousel-container">
+        <h1>단체사진</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for img in imgs1%}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="/static/photo/{{ img.content }}" alt="{{ img.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="d">
-            <img src="http://drive.google.com/uc?export=view&id=1xm-E8596oYhxu69HGL5PAIix2TYeDbVd" alt="sadfdsaf">
+    </div>
+  </div>
+
+  <div id="page2" class="page" >
+    <div class="carousel-container">
+        <h1>풍경</h1>
+        <div id="myCarouse2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for img in imgs2%}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="/static/photo/{{ img.content }}" alt="{{ img.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#myCarouse2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    -->
-    
-    
-        <p><a href="{% url 'user:choice' %}">뒤로가기</a></p>
-    </body>
-    </html>
+    </div>
+  </div>
+  <div id="page3" class="page" >
+    <div class="carousel-container">
+        <h1>찬웅</h1>
+        <div id="myCarouse3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for img in imgs3%}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="/static/photo/{{ img.content }}" alt="{{ img.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#myCarouse3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <div id="page4" class="page" >
+    <div class="carousel-container">
+        <h1>정현</h1>
+        <div id="myCarouse4" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for img in imgs4%}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="/static/photo/{{ img.content }}" alt="{{ img.alt }}">
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#myCarouse4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouse4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function switchContent(pageId) {
+      var pages = document.getElementsByClassName('page');
+      for (var i = 0; i < pages.length; i++) {
+        if (pages[i].id === pageId) {
+          pages[i].classList.add('active');
+        } else {
+          pages[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+
+<!--
+    <div class="c">
+        <img src="http://drive.google.com/uc?export=view&id=1Qf-r6-nED7SqUUhrKiwa5ZNEk_uggRgG" alt="sadfdsaf">
+    </div>
+    <div class="d">
+        <img src="http://drive.google.com/uc?export=view&id=1xm-E8596oYhxu69HGL5PAIix2TYeDbVd" alt="sadfdsaf">
+    </div>
+-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <p><a href="{% url 'user:choice' %}">뒤로가기</a></p>
+</body>
+</html>
 

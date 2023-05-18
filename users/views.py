@@ -8,12 +8,16 @@ import time
 from django.db import connection
 from django.shortcuts import render
 from django.db.models import Q
-
+from dotenv import load_dotenv
+import os
 import logging
 logger = logging.getLogger('my')
 logger2 = logging.getLogger('my2')
 # Create your views here.
 login_user_name = 'None'
+
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
 
 def login_view(request):
     global login_user_name
@@ -132,7 +136,7 @@ def GetShirakawago(request):
 
 def Chubu_view(request):
     logger.info("USER:%s LOAD CHUBU PAGE", login_user_name)
-    return render(request, "users/Chubu.html")
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
 
 def Wrong_view(request):  
     logger.info("USER:%s WRONG PAGE", login_user_name)
@@ -163,3 +167,4 @@ def choice_toyama_view(request):
 def choice_shirakawago_view(request):
     logger.info("USER:%s LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE", login_user_name)
     return render(request, "users/choice_shirakawago.html")
+
