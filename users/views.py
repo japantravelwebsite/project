@@ -83,6 +83,7 @@ def GetNagoya(request):
     imgs2 = Book.objects.filter(Q(location="nagoya") & Q(people="N"))
     imgs3 = Book.objects.filter(Q(location="nagoya") & Q(people="C"))
     imgs4 = Book.objects.filter(Q(location="nagoya") & Q(people="J"))
+    print(type(imgs1))
     #imgs = picture_db.objects.get(location = "Toyama")
     return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
 
@@ -188,3 +189,11 @@ def choice_shirakawago_view(request):
     logger.info("USER:%s LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE", login_user_name)
     return render(request, "users/choice_shirakawago.html")
 
+def location_view(request,A):
+    location1 = ["Nagoya", "Takayama", "Shirakawago", "Gero"]
+    location2 = ["NAGOYA", "TAKAYAMA", "SHIRAKAWAGO", "GERO"]
+    location3 = ["nagoya", "takayama", "shirakawago", "gero"]
+    if A==Nagoya:
+        t = location1[0]
+    return({"location1":t, })
+    logger

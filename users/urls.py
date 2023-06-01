@@ -26,6 +26,7 @@ urlpatterns = [
     path("Chubu/choice_toyama", views.choice_toyama_view, name="choice_toyama"),
     path("Chubu/choice_nagoya", views.choice_nagoya_view, name="choice_nagoya"),
     path("Chubu/choice_shirakawago", views.choice_shirakawago_view, name="choice_shirakawago"),
+    path("Chubu/location", views.location_view, name="location"),
 ]
 
 #urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

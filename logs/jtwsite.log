@@ -1921,3 +1921,798 @@ NameError: name 'api_key' is not defined
 2023-05-18 18:39:23,217 [WARNING] django.request: Not Found: /
 2023-05-18 18:39:23,259 [WARNING] django.request: Not Found: /favicon.ico
 2023-05-18 18:39:28,910 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 20:31:39,619 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 20:31:48,561 [WARNING] django.request: Not Found: /
+2023-05-18 20:31:48,611 [WARNING] django.request: Not Found: /favicon.ico
+2023-05-18 20:31:54,882 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 20:31:56,676 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 20:31:58,263 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 20:31:59,397 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-05-18 20:32:13,667 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-18 20:32:14,487 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 20:32:17,038 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 20:32:17,996 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 20:36:33,035 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 20:36:40,337 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 20:36:44,222 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 20:36:56,605 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:14:29,445 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 21:14:29,709 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 21:14:32,087 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:14:33,646 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:14:33,649 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:14:36,889 [INFO] my: USER:None LOAD NAGOYA_MOV PAGE
+2023-05-18 21:14:38,161 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:14:39,009 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:14:39,012 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:16:44,188 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 21:16:44,506 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 21:16:47,263 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:16:47,277 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:16:49,226 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:16:50,732 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:16:51,701 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:16:51,704 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:23:38,208 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 21:23:38,460 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 21:23:44,407 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:23:44,410 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+2023-05-18 21:23:48,112 [WARNING] django.request: Not Found: /auth/Chubu/choice_nagoya
+2023-05-18 21:24:20,148 [WARNING] django.request: Not Found: /auth/Chubu/choice_nagoya
+2023-05-18 21:50:42,724 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:50:42,729 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+2023-05-18 21:50:51,719 [WARNING] django.request: Not Found: /auth/Chubu/choice_nagoya
+2023-05-18 21:51:02,071 [INFO] my: LOAD LOGIN PAGE
+2023-05-18 21:51:03,925 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:51:03,927 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+2023-05-18 21:52:36,691 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 21:52:36,949 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 21:52:43,799 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:52:43,809 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:52:46,507 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:52:46,509 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:54:11,767 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:54:11,769 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:54:12,560 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:54:12,562 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:54:16,069 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:54:16,070 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:54:36,863 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:54:36,865 [ERROR] django.request: Internal Server Error: /auth/Chubu
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 160, in Chubu_view
+    return render(request, "users/Chubu.html", {'api_key':API_KEY})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_nagoya' with no arguments not found. 1 pattern(s) tried: ['auth/Chubu/choice_nagoya/(?P<variable_value>[^/]+)/\\Z']
+2023-05-18 21:54:56,359 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py changed, reloading.
+2023-05-18 21:54:56,612 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-05-18 21:54:57,672 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:54:59,725 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:55:00,796 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:55:00,802 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:55:04,615 [INFO] my: USER:None LOAD NAGOYA_MOV PAGE
+2023-05-18 21:55:05,662 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:55:06,428 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:55:51,095 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 21:55:52,083 [INFO] my: USER:None LOAD TOYAMA PAGE
+2023-05-18 21:55:53,223 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 21:55:54,207 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 21:55:56,105 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:55:57,105 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:55:57,107 [ERROR] django.request: Internal Server Error: /auth/Chubu/Nagoya
+Traceback (most recent call last):
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/users/views.py", line 88, in GetNagoya
+    return render(request, "users/Nagoya.html", {"imgs1" : imgs1, "imgs2" : imgs2, "imgs3" : imgs3, "imgs4" : imgs4 })
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/anaconda3/envs/my_env/lib/python3.11/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'choice_new' not found. 'choice_new' is not a valid view function or pattern name.
+2023-05-18 21:56:17,571 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 21:56:18,984 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 21:56:20,195 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 22:00:22,505 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 22:00:23,694 [INFO] my: USER:None LOAD NAGOYA PAGE
+2023-05-18 22:00:31,024 [INFO] my: USER:None LOAD NAGOYA PIC/MOV CHOICE PAGE
+2023-05-18 22:00:32,615 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-18 22:00:34,670 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 22:00:35,789 [INFO] my: USER:None LOAD TOYAMA PAGE
+2023-05-18 22:00:37,167 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-18 22:00:38,090 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-22 17:49:26,826 [INFO] my: USER:None LOAD TOYAMA PIC/MOV CHOICE PAGE
+2023-05-22 17:49:27,915 [INFO] my: USER:None LOAD TOYAMA PAGE
+2023-05-22 17:49:40,477 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-22 17:50:28,244 [INFO] my: LOAD LOGIN PAGE
+2023-05-22 17:50:33,615 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-22 17:50:36,546 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-22 17:50:37,568 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-05-22 17:51:21,264 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-22 17:51:22,437 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-27 14:53:05,845 [INFO] my: USER:None LOAD SHIRAKAWAGO PIC/MOV CHOICE PAGE
+2023-05-27 14:53:07,690 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-27 14:53:10,210 [INFO] my: LOAD LOGIN PAGE
+2023-05-27 14:53:12,329 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-27 14:54:48,635 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-27 14:54:49,964 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-05-27 14:56:00,118 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-05-27 14:56:01,315 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-05-27 14:56:03,951 [INFO] my: USER:None LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-27 14:56:05,288 [INFO] my: USER:None LOAD GERO PAGE
+2023-05-27 14:56:38,687 [INFO] my: USER:None LOAD GERO PIC/MOV CHOICE PAGE
+2023-05-27 14:56:39,694 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-06-01 15:27:05,180 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-01 15:27:09,571 [WARNING] django.request: Not Found: /
+2023-06-01 15:27:09,623 [WARNING] django.request: Not Found: /favicon.ico
+2023-06-01 15:27:25,986 [INFO] my: LOAD LOGIN PAGE
+2023-06-01 15:27:28,120 [INFO] my: USER:None LOAD CHUBU PAGE
+2023-06-01 15:27:36,743 [INFO] my: USER:None LOAD TAKAYAMA PIC/MOV CHOICE PAGE
+2023-06-01 15:27:37,773 [INFO] my: USER:None LOAD TAKAYAMA PAGE
+2023-06-01 16:48:22,375 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/jtwsite/settings.py changed, reloading.
+2023-06-01 16:48:22,630 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2023-06-01 16:54:07,341 [INFO] django.utils.autoreload: /Users/jeonchanwoong/Documents/programming/Web/JTWpy/project/jtwsite/settings.py changed, reloading.
+2023-06-01 16:54:07,554 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
